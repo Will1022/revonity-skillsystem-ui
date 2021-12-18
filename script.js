@@ -262,4 +262,6 @@ $(function () {
     function closeSkillSystem() {
         $.post("http://nui/exit", JSON.stringify({}));  
     };
+
+    
 })
