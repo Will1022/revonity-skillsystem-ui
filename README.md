@@ -1,12 +1,4 @@
-# revonity-skillsystem-ui - RevoNity
-
- __          _______ _      _      
- \ \        / /_   _| |    | |     
-  \ \  /\  / /  | | | |    | |     
-   \ \/  \/ /   | | | |    | |     
-    \  /\  /   _| |_| |____| |____ 
-     \/  \/   |_____|______|______|
-                                                                  
+# revonity-skillsystem-ui - RevoNity                           
 
 ## Képek
 ![GIF](https://i.imgur.com/s85KJRn.gif)
