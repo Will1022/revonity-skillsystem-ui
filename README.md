@@ -1,5 +1,3 @@
-# revonity-skillsystem-ui
-
 # revonity-skillsystem-ui - RevoNity
 
 ## Képek
