@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="hu">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Revonity SkillSystem</title>
+    <title>Revonity Skill System</title>
     <link rel="stylesheet" href="css/style.css" type="text/css">
     <link rel="stylesheet" href="css/all.css" type="text/css">
     <script src="nui://game/ui/jquery.js" type="text/javascript"></script>
@@ -13,132 +13,142 @@
 <body>
     <div id="container">
     <div class="main">
+        <!-- HEADER -->
         <div class="header">
-            <div class="div-left"><a class="header-text">Elkölthető pontok: </a><a class="header-text" id="point">0</a></div>
-            <div class="div-left"><a class="header-text">Szint: </a><a class="header-text" id="level">0</a></div>
-            <div class="div-right">
-                <button class="btn-submit" id="submit"><a class="btn-text">Mentés</a></button>
-                <button class="btn-delete" id="clear"><a class="btn-text">Törlés</a></button>
+            <div class="div-left pontok-item" style="margin-top: 3vh;"><a class="header-text" >RevoNity - Skill Rendszer <i class="fas fa-medal"></i></a></div>
+            <div class="div-right pontok-item1" style="margin-top: 3vh; padding-right: 1 vh;"><a class="header-text" id="elerhetopontok">Elérhető pontok: </a><a class="header-text pointer" id="point">0</a></div>
+            <div class="div-szint pontok-item" style="margin-top: 3vh; margin-right: 490px;"><a class="header-text">Szint: </a><a class="header-text pointer" id="level">0</a></div>
+            <div class="div-right eltolas">
+                <img src="images/logo.png" > 
             </div>
         </div>
-        <div class="box tooltip" id="box-item-1">
-            <span class="tooltiptext">Olimpikon - Te vagy a országban a legjobb futó.<br>LVL 1: Teszt1 <br> LVL 2: Teszt2 <br> LVL 3: Teszt3</span>
-            <i class="fas fa-running icon" id="test"></i><div class="counter" id="counter-1">0</div>
-        </div>
+        <!-- SKILL BOXOK -->
+        <div class="box tooltip " id="box-item-1">
+            <span class="tooltiptext">Olimpikon - Legyél te a legjobb futó.<br>LVL 1: Teszt1 <br> LVL 2: Teszt2 <br> LVL 3: Teszt3</span>
+            <i class="fas fa-running icon"></i><a class="counter">0</a>
+        </div> 
         <div class="box tooltip" id="box-item-2">
-            <span class="tooltiptext">SAMPLE TEXT</span>
+            <span class="tooltiptext">Olimpikon - Legyél te a legjobb futó.<br>LVL 1: Teszt1 <br> LVL 2: Teszt2 <br> LVL 3: Teszt3</span>
             <i class="fas fa-ambulance icon"></i><a class="counter" id="counter-2">0</a>
         </div>
         <div class="box tooltip" id="box-item-3">
-            <span class="tooltiptext">SAMPLE TEXT</span>
-            <i class="fas fa-anchor icon"></i><a class="counter">0</a>
+            <span class="tooltiptext">Olimpikon - Legyél te a legjobb futó.<br>LVL 1: Teszt1 <br> LVL 2: Teszt2 <br> LVL 3: Teszt3</span>
+            <i class="fas fa-anchor icon" style="color: rgb(247, 244, 71);" ></i><a class="counter">0</a>
         </div>
         <div class="box tooltip" id="box-item-4">
-            <span class="tooltiptext">SAMPLE TEXT</span>
-            <i class="fas fa-plane icon"></i><a class="counter">0</a>
+            <span class="tooltiptext">Olimpikon - Legyél te a legjobb futó.<br>LVL 1: Teszt1 <br> LVL 2: Teszt2 <br> LVL 3: Teszt3</span>
+            <i class="fas fa-plane icon" style="color: rgb(153, 153, 153);"></i><a class="counter">0</a>
         </div>
         <div class="box tooltip" id="box-item-5">
-            <span class="tooltiptext">SAMPLE TEXT</span>
-            <i class="fas fa-helicopter icon"></i><a class="counter">0</a>
+            <span class="tooltiptext">Olimpikon - Legyél te a legjobb futó.<br>LVL 1: Teszt1 <br> LVL 2: Teszt2 <br> LVL 3: Teszt3</span>
+            <i class="fas fa-helicopter icon" style="color: rgb(171, 71, 253);"></i><a class="counter">0</a>
         </div>
         <div class="box tooltip" id="box-item-6">
-            <span class="tooltiptext">SAMPLE TEXT</span>
-            <i class="fas fa-car icon"></i><a class="counter">0</a>
+            <span class="tooltiptext">Olimpikon - Legyél te a legjobb futó.<br>LVL 1: Teszt1 <br> LVL 2: Teszt2 <br> LVL 3: Teszt3</span>
+            <i class="fas fa-car icon" style="color: rgb(49, 205, 253);"></i><a class="counter">0</a>
         </div>
-        <div class="box tooltip" id="box-item-7"><span class="tooltiptext">SAMPLE TEXT</span>
-            <i class="fas fa-car-crash icon-red"></i><a class="counter">0</a>
-        </div>
+        <div class="box tooltip" id="box-item-7"><span class="tooltiptext">Olimpikon - Legyél te a legjobb futó.<br>LVL 1: Teszt1 <br> LVL 2: Teszt2 <br> LVL 3: Teszt3</span>
+            <i class="fas fa-car-crash icon" style="color: rgb(243, 166, 0);"></i><a class="counter">0</a>
+        </div>                           <!--    KÜLÖN SZÍNT ÍGY ADHATUNK MEG! ^ -->
         <div class="box tooltipleft" id="box-item-8">
             <span class="tooltiptextleft">Olimpikon - Te vagy a országban a legjobb futó.<br>LVL 1: Teszt1 <br> LVL 2: Teszt2 <br> LVL 3: Teszt3</span>
             <i class="fas fa-wrench icon"></i><a class="counter">0</a>
         </div>
         <div class="box tooltip" id="box-item-9">
-            <span class="tooltiptext">SAMPLE TEXT</span>
+            <span class="tooltiptext">Olimpikon - Legyél te a legjobb futó.<br>LVL 1: Teszt1 <br> LVL 2: Teszt2 <br> LVL 3: Teszt3</span>
             <i class="fas fa-tools icon"></i><a class="counter">0</a>
         </div>
         <div class="box tooltip" id="box-item-10">
-            <span class="tooltiptext">SAMPLE TEXT</span>
+            <span class="tooltiptext">Olimpikon - Legyél te a legjobb futó.<br>LVL 1: Teszt1 <br> LVL 2: Teszt2 <br> LVL 3: Teszt3</span>
             <i class="fas fa-dna icon"></i><a class="counter">0</a>
         </div>
         <div class="box tooltip" id="box-item-11">
-            <span class="tooltiptext">SAMPLE TEXT</span>
+            <span class="tooltiptext">Olimpikon - Legyél te a legjobb futó.<br>LVL 1: Teszt1 <br> LVL 2: Teszt2 <br> LVL 3: Teszt3</span>
             <i class="fas fa-cannabis icon"></i><a class="counter">0</a>
         </div>
         <div class="box tooltip" id="box-item-12">
-            <span class="tooltiptext">SAMPLE TEXT</span>
+            <span class="tooltiptext">Olimpikon - Legyél te a legjobb futó.<br>LVL 1: Teszt1 <br> LVL 2: Teszt2 <br> LVL 3: Teszt3</span>
             <i class="fas fa-laptop-code icon"></i><a class="counter">0</a>
         </div>
         <div class="box tooltip" id="box-item-13">
-            <span class="tooltiptext">SAMPLE TEXT</span>
+            <span class="tooltiptext">Olimpikon - Legyél te a legjobb futó.<br>LVL 1: Teszt1 <br> LVL 2: Teszt2 <br> LVL 3: Teszt3</span>
             <i class="fas fa-laptop-code icon"></i><a class="counter">0</a>
         </div>
         <div class="box tooltip" id="box-item-14">
-            <span class="tooltiptext">SAMPLE TEXT</span>
+            <span class="tooltiptext">Olimpikon - Legyél te a legjobb futó.<br>LVL 1: Teszt1 <br> LVL 2: Teszt2 <br> LVL 3: Teszt3</span>
             <i class="fas fa-laptop-code icon"></i><a class="counter">0</a>
         </div>
         <div class="box tooltip" id="box-item-15">
-            <span class="tooltiptext">SAMPLE TEXT</span>
+            <span class="tooltiptext">Olimpikon - Legyél te a legjobb futó.<br>LVL 1: Teszt1 <br> LVL 2: Teszt2 <br> LVL 3: Teszt3</span>
             <i class="fas fa-laptop-code icon"></i><a class="counter">0</a>
         </div>
         <div class="box tooltipleft" id="box-item-16">
-            <span class="tooltiptextleft">SAMPLE TEXT</span>
+            <span class="tooltiptextleft">Olimpikon - Legyél te a legjobb futó.<br>LVL 1: Teszt1 <br> LVL 2: Teszt2 <br> LVL 3: Teszt3</span>
             <i class="fas fa-laptop-code icon"></i><a class="counter">0</a>
         </div>
         <div class="box tooltip" id="box-item-17">
-            <span class="tooltiptext">SAMPLE TEXT</span>
+            <span class="tooltiptext">Olimpikon - Legyél te a legjobb futó.<br>LVL 1: Teszt1 <br> LVL 2: Teszt2 <br> LVL 3: Teszt3</span>
             <i class="fas fa-laptop-code icon"></i><a class="counter">0</a>
         </div>
         <div class="box tooltip" id="box-item-18">
-            <span class="tooltiptext">SAMPLE TEXT</span>
+            <span class="tooltiptext">Olimpikon - Legyél te a legjobb futó.<br>LVL 1: Teszt1 <br> LVL 2: Teszt2 <br> LVL 3: Teszt3</span>
             <i class="fas fa-laptop-code icon"></i><a class="counter">0</a>
         </div>
         <div class="box tooltip" id="box-item-19">
-            <span class="tooltiptext">SAMPLE TEXT</span>
+            <span class="tooltiptext">Olimpikon - Legyél te a legjobb futó.<br>LVL 1: Teszt1 <br> LVL 2: Teszt2 <br> LVL 3: Teszt3</span>
             <i class="fas fa-laptop-code icon"></i><a class="counter">0</a>
         </div>
         <div class="box tooltip" id="box-item-20">
-            <span class="tooltiptext">SAMPLE TEXT</span>
+            <span class="tooltiptext">Olimpikon - Legyél te a legjobb futó.<br>LVL 1: Teszt1 <br> LVL 2: Teszt2 <br> LVL 3: Teszt3</span>
             <i class="fas fa-laptop-code icon"></i><a class="counter">0</a>
         </div>
         <div class="box tooltip" id="box-item-21">
-            <span class="tooltiptext">SAMPLE TEXT</span>
+            <span class="tooltiptext">Olimpikon - Legyél te a legjobb futó.<br>LVL 1: Teszt1 <br> LVL 2: Teszt2 <br> LVL 3: Teszt3</span>
             <i class="fas fa-laptop-code icon"></i><a class="counter">0</a>
         </div>
         <div class="box tooltip" id="box-item-22">
-            <span class="tooltiptext">SAMPLE TEXT</span>
+            <span class="tooltiptext">Olimpikon - Legyél te a legjobb futó.<br>LVL 1: Teszt1 <br> LVL 2: Teszt2 <br> LVL 3: Teszt3</span>
             <i class="fas fa-laptop-code icon"></i><a class="counter">0</a>
         </div>
         <div class="box tooltip" id="box-item-23">
-            <span class="tooltiptext">SAMPLE TEXT</span>
+            <span class="tooltiptext">Olimpikon - Legyél te a legjobb futó.<br>LVL 1: Teszt1 <br> LVL 2: Teszt2 <br> LVL 3: Teszt3</span>
             <i class="fas fa-laptop-code icon"></i><a class="counter">0</a>
         </div>
         <div class="box tooltipleft" id="box-item-24">
-            <span class="tooltiptextleft">SAMPLE TEXT</span>
+            <span class="tooltiptextleft">Olimpikon - Legyél te a legjobb futó.<br>LVL 1: Teszt1 <br> LVL 2: Teszt2 <br> LVL 3: Teszt3</span>
             <i class="fas fa-laptop-code icon"></i><a class="counter">0</a>
         </div>
         <div class="box tooltip" id="box-item-25">
-            <span class="tooltiptext">SAMPLE TEXT</span>
+            <span class="tooltiptext">Olimpikon - Legyél te a legjobb futó.<br>LVL 1: Teszt1 <br> LVL 2: Teszt2 <br> LVL 3: Teszt3</span>
             <i class="fas fa-laptop-code icon"></i><a class="counter">0</a>
         </div>
         <div class="box tooltip" id="box-item-26">
-            <span class="tooltiptext">SAMPLE TEXT</span>
+            <span class="tooltiptext">Olimpikon - Legyél te a legjobb futó.<br>LVL 1: Teszt1 <br> LVL 2: Teszt2 <br> LVL 3: Teszt3</span>
             <i class="fas fa-laptop-code icon"></i><a class="counter">0</a>
         </div>
         <div class="box tooltip" id="box-item-27">
-            <span class="tooltiptext">SAMPLE TEXT</span>
+            <span class="tooltiptext">Olimpikon - Legyél te a legjobb futó.<br>LVL 1: Teszt1 <br> LVL 2: Teszt2 <br> LVL 3: Teszt3</span>
             <i class="fas fa-laptop-code icon"></i><a class="counter">0</a>
         </div>
         <div class="box tooltip" id="box-item-28">
-            <span class="tooltiptext">SAMPLE TEXT</span>
+            <span class="tooltiptext">Olimpikon - Legyél te a legjobb futó.<br>LVL 1: Teszt1 <br> LVL 2: Teszt2 <br> LVL 3: Teszt3</span>
             <i class="fas fa-laptop-code icon"></i><a class="counter">0</a>
         </div>
         <div class="box tooltip" id="box-item-29">
-            <span class="tooltiptext">SAMPLE TEXT</span>
+            <span class="tooltiptext">Olimpikon - Legyél te a legjobb futó.<br>LVL 1: Teszt1 <br> LVL 2: Teszt2 <br> LVL 3: Teszt3</span>
             <i class="fas fa-laptop-code icon"></i><a class="counter">0</a>
         </div>
         <div class="box tooltip" id="box-item-30">
-            <span class="tooltiptext">SAMPLE TEXT</span>
+            <span class="tooltiptext">Olimpikon - Legyél te a legjobb futó.<br>LVL 1: Teszt1 <br> LVL 2: Teszt2 <br> LVL 3: Teszt3</span>
             <i class="fas fa-laptop-code icon"></i><a class="counter">0</a>
+        </div>
+         <!-- SKILL BOX END -->
+
+        <!-- FOOTER -->
+        <div class="div-right div-exit">
+            <button class="btn raisesub"  id="logoffbutton" style="background-color: rgb(48, 134, 26); color: white">Mentés</button>
+            <button class="btn raisekil"  id="submit" style="background-color: rgb(185, 33, 33); color: white">Törlés</button>
+            <button class="btn raise"  id="clear" style="background-color: rgb(148, 79, 212); color: white">Kilépés</button>
         </div>
     </div>
 </div>
