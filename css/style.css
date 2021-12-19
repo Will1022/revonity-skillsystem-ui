@@ -7,9 +7,13 @@
 
 /* FŐ */
 
+/* body{
+  background-color: #00835c;
+} */
+
 .main{
     position: absolute;
-    background: rgba(0, 0, 0, 0.829);
+    background: rgba(0, 0, 0, 0.733);
     border: 2px groove rgba(0, 0, 0, 0.61);
     border-radius: 8px;
     z-index:1;
@@ -18,8 +22,9 @@
     min-height: 40%;
     /*max-height: 80%;*/
     margin: 5vw;
-    margin-top: 8vw;
-    margin-left: 7vw;
+    margin-top: 9.2vw;
+    margin-left: 8.5vw;
+    float: center;
     /* box-shadow: 0px 0px 25px 20px rgb(183, 0, 255); */
 }
 
@@ -503,24 +508,30 @@ img {
 
 /* REZPONZIVITÁS */
 
+/* 1680x1050 FELBONTÁS */
 
 @media (min-width: 1680px) {
   img {
-      height: 190px;
-      width: 210px;
-      margin-left: -2.5vh;
-      margin-bottom: 6.2vh;
-      margin-top: 0.7vh;
-      margin-left: -1.5vh;
+      height: 170px;
+      width: 190px;
+      margin-left: -0.5vh;
+      margin-bottom: 5.2vh;
+      margin-top: 1.3vh;
   }
 
   .eltolas {
-      margin-right: 7.2vh;
+      margin-right: 8.2vh;
       margin-bottom: 10vh;
       max-height: 6vh;
       max-width: 5vh;
   }
+
+  .header-text{
+    color:white;
+    font-size: 2.2vh;
+  }
 }
+
 
 /* 1920x1080 FELBONTÁS */
 
@@ -536,7 +547,7 @@ img {
 
     .eltolas {
         margin-right: 7.2vh;
-        margin-bottom: 7vh;
+        margin-bottom: 9vh;
         max-height: 6vh;
         max-width: 5vh;
     }
@@ -546,11 +557,11 @@ img {
 
 @media (width: 1440px) {
     img {
-        height: 150px;
-        width: 170px;
+        height: 144px;
+        width: 160px;
         margin-bottom: 7.2vh;
-        margin-top: 1.9vh;
-        margin-left: -2.9vh;
+        margin-top: 1.1vh;
+        margin-left: -2.4vh;
     }
 
     .eltolas {
@@ -561,123 +572,122 @@ img {
     }
 
     .header-text{
-        color:white;
-        font-size: 2.2vh;
+      color:white;
+      font-size: 2.0vh;
     }
+    
+    .pontok-item {
+      background-color: rgba(56, 56, 56, 0.705);
+      border-radius: 5px;
+      padding-left: 6px;
+      padding-right: 8px;
+      padding-top: 1px;
+      padding-bottom: 2px;
+      margin-right: 2vh;
+      font-family: 'Poppins', sans-serif;
+  }
+
+  .main{
+    scale: 10%;
+    position: absolute;
+    background: rgba(0, 0, 0, 0.733);
+    border: 2px groove rgba(0, 0, 0, 0.61);
+    border-radius: 8px;
+    z-index:1;
+    min-width: 50%;
+    max-width: 80%;
+    max-height: 80%;
+    min-height: 40%;
+    /*max-height: 80%;*/
+    margin-top: 7.6vw;
+    margin-left: 8.7vw;
+    float: center;
+    /* box-shadow: 0px 0px 25px 20px rgb(183, 0, 255); */
+  }
 
 }
 
 /* 1366x768 FELBONTÁS */
 
 @media (width: 1366px) {
-    img {
-        height: 150px;
-        width: 170px;
-        margin-bottom: 9.2vh;
-        margin-top: 1.6vh;
-        margin-left: -1.2vh;
-    }
-
-    .eltolas {
-        margin-right: 7.99vh;
-        margin-bottom: 10vh;
-        max-height: 6vh;
-        max-width: 5vh;
-    }
-
-    .header-text{
-        color:white;
-        font-size: 2.2vh;
-    }
-
-}
-
-/* 1280x720 FELBONTÁS */
-
-@media screen and (width: 1280px) {
-    img {
-        height: 90px;
-        width: 110px;
-        margin-bottom: 9.2vh;
-        margin-top: 1.7vh;
-        margin-left: -0.1vh;
-    }
-
-    .eltolas {
-        margin-right: 7.99vh;
-        margin-bottom: 10vh;
-        max-height: 6vh;
-        max-width: 5vh;
-    }
-
-    .header-text{
-        color:white;
-        font-size: 2.2vh;
-    }
-
-    .main{
-        position: absolute;
-        background: rgba(0, 0, 0, 0.829);
-        border: 2px groove rgba(0, 0, 0, 0.61);
-        border-radius: 8px;
-        z-index:1;
-        min-width: 50%;
-        max-width: 80%;
-        height: 615px;
-        /*max-height: 80%;*/
-        margin: 5vw;
-        /* box-shadow: 0px 0px 25px 20px rgb(183, 0, 255); */
-    }
-    
-    .div-exit{
-        padding-top: 4px;
-        padding-right: 10px;
-        margin-bottom: 1px;
-    }
-
-}
-
-/* 1280x720 FELBONTÁS */
-
-@media (width: 1280px) {
   img {
-      height: 90px;
-      width: 110px;
-      margin-bottom: 9.2vh;
-      margin-top: 0.7vh;
-      margin-left: -0.1vh;
+    height: 144px;
+    width: 160px;
+    margin-bottom: 7.2vh;
+    margin-top: 1.1vh;
+    margin-left: -2.4vh;
   }
 
   .eltolas {
-      margin-right: 7.99vh;
+      margin-right: 5.99vh;
       margin-bottom: 10vh;
       max-height: 6vh;
       max-width: 5vh;
   }
 
   .header-text{
-      color:white;
-      font-size: 2.2vh;
+    color:white;
+    font-size: 2.0vh;
+  }
+
+  .pontok-item {
+    background-color: rgba(56, 56, 56, 0.705);
+    border-radius: 5px;
+    padding-left: 6px;
+    padding-right: 8px;
+    padding-top: 1px;
+    padding-bottom: 2px;
+    margin-right: 2vh;
+    font-family: 'Poppins', sans-serif;
+  }
+
+}
+
+/* 1280x1024 FELBONTÁS */
+
+@media screen and (max-height: 1024px) and (max-width: 1280px) {
+  img {
+    height: 140px;
+    width: 170px;
+    margin-bottom: 5.2vh;
+    margin-top: 1.8vh;
+    margin-left: -2.4vh;
+  }
+
+  .eltolas {
+      margin-right: 5.99vh;
+      margin-bottom: 10vh;
+      max-height: 6vh;
+      max-width: 5vh;
+  }
+
+  .header-text{
+    color:white;
+    font-size: 1.24vh;
   }
 
   .main{
-      position: absolute;
-      background: rgba(0, 0, 0, 0.829);
-      border: 2px groove rgba(0, 0, 0, 0.61);
-      border-radius: 8px;
-      z-index:1;
-      min-width: 50%;
-      max-width: 80%;
-      height: 615px;
-      /*max-height: 80%;*/
-      margin: 5vw;
-      /* box-shadow: 0px 0px 25px 20px rgb(183, 0, 255); */
+    scale: 10%;
+    position: absolute;
+    background: rgba(0, 0, 0, 0.733);
+    border: 2px groove rgba(0, 0, 0, 0.61);
+    border-radius: 8px;
+    z-index:1;
+    min-width: 50%;
+    max-width: 80%;
+    max-height: 80%;
+    min-height: 40%;
+    /*max-height: 80%;*/
+    margin-top: 13.8vw;
+    margin-left: 8.5vw;
+    float: center;
+    /* box-shadow: 0px 0px 25px 20px rgb(183, 0, 255); */
   }
-  
+
   .div-exit{
-      padding-top: 4px;
-      padding-right: 10px;
-      margin-bottom: 1px;
+  padding-top: 5px;
+  padding-right: 10px;
+  margin-bottom: 9px;
   }
 
 }
